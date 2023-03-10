@@ -1,140 +1,53 @@
-<div class="p-6 lg:p-8 bg-white border-b border-gray-200">
-    <x-application-logo class="block h-12 w-auto" />
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <h1 align="center" class="mt-8 text-2xl font-semibold text-gray-900" >
-        Sistema de Difusión de Alerta Temprana "SAT SCZ"
-    </h1>
+        <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <h2 class="ml-3 text-xl font-semibold text-gray-900">
-        Eventos2222
-    </h2>
-</div>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
+        <!-- Scripts -->
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
 
+        <!-- Styles -->
+        @livewireStyles
+    </head>
+    <body class="font-sans antialiased">
+        <x-banner />
 
-<div class="bg-green bg-opacity-25 grid grid-cols-2 md:grid-cols-2 gap-6 lg:gap-8 p-6 lg:p-8">
-    <div>
-        <div class="flex items-center">
-            <x-buttonp class="ml-4">
-                {{ __('Inundaciones') }}
-            </x-buttonp>
-        </div>
-    </div>
+        <div class="min-h-screen bg-gray-100">
 
-    <div>
-        <div class="flex items-center">
-            <x-buttonp class="ml-4">
-                {{ __('Incendios Forestales') }}
-            </x-buttonp>
-        </div>
-    </div>
-
-    <div>
-        <div class="flex items-center">
-            <x-buttonp class="ml-4">
-                {{ __('Incendios Estructurales') }}
-            </x-buttonp>
-        </div>
-    </div>
-
-    <div>
-        <div class="flex items-center">
-            <x-buttonp class="ml-4">
-                {{ __('Deslizamientos') }}
-            </x-buttonp>
-        </div>
-
-    </div>
-    <div>
-        <div class="flex items-center">
-            <x-buttonp class="ml-4">
-                {{ __('Heladas') }}
-            </x-buttonp>
+            <!-- Page Content -->
+            <main>
+                    <div class="p-6 lg:p-8 bg-white border-b border-gray-200">
+                    
+                        <h1 align="center" class="mt-8 text-2xl font-semibold text-gray-900" >
+                            Evento: {{$evento->nombre}}
+                        </h1>
+                    </div>
+                    
+                    <div class="bg-green bg-opacity-25 grid grid-cols-1 md:grid-cols-1 gap-6 lg:gap-8 p-6 lg:p-8">
+                        <div class="panel-body">
+                            @include('events.tabla')
+                        </div>
+                    </div>
+                    
+                    <div class="bg-green bg-opacity-25 grid grid-cols-3 md:grid-cols-3 gap-6 lg:gap-8 p-6 lg:p-8">
+                        
+                    </div>
+                    <div class="bg-green bg-opacity-25 grid grid-cols-1 md:grid-cols-1 gap-6 lg:gap-8 p-6 lg:p-8 ">
+                        
+                    </div>
+            </main>
         </div>
 
-    </div>
-    <div>
-        <div class="flex items-center">
-            <x-buttonp class="ml-4">
-                {{ __('Sequias') }}
-            </x-buttonp>
-        </div>
+        @stack('modals')
 
-    </div>
-    <div>
-        <div class="flex items-center">
-            <x-buttonp class="ml-4">
-                {{ __('Sismos/Terremotos') }}
-            </x-buttonp>
-        </div>
-
-    </div>
-    <div>
-        <div class="flex items-center">
-            <x-buttonp class="ml-4">
-                {{ __('Otros Eventos Adversos') }}
-            </x-buttonp>
-        </div>
-
-    </div>
-</div>
-
-<div class="bg-green bg-opacity-25 grid grid-cols-3 md:grid-cols-3 gap-6 lg:gap-8 p-6 lg:p-8">
-    <div>
-        <div class="flex items-center">
-            <x-buttona class="ml-2">
-                {{ __('Procedimientos') }}
-            </x-buttona>
-        </div>
-    </div>
-
-    <div>
-        <div class="flex items-center">
-            <x-buttona class="ml-2">
-                {{ __('Planes de Contingencia') }}
-            </x-buttona>
-        </div>
-    </div>
-
-    <div>
-        <div class="flex items-center">
-            <x-buttona class="ml-2">
-                {{ __('Protocolos') }}
-            </x-buttona>
-        </div>
-    </div>
-
-    <div>
-        <div class="flex items-center">
-            <x-buttona class="ml-2">
-                {{ __('Blog de articulos') }}
-            </x-buttona>
-        </div>
-
-    </div>
-    <div>
-        <div class="flex items-center">
-            <x-buttona class="ml-2">
-                {{ __('Numeros de Contingencias') }}
-            </x-buttona>
-        </div>
-
-    </div>
-    <div>
-        <div class="flex items-center">
-            <x-buttona class="ml-2">
-                {{ __('Otras opciones') }}
-            </x-buttona>
-        </div>
-
-    </div>
-</div>
-<div class="bg-green bg-opacity-25 grid grid-cols-1 md:grid-cols-1 gap-6 lg:gap-8 p-6 lg:p-8 ">
-    <div>
-        <div class="flex items-center ">
-            <x-button class="ml-4">
-                {{ __('Comunícate con Emergencias Gubernamentales: 800148139') }}
-            </x-button>
-        </div>
-    </div>
-</div>
+        @livewireScripts
+    </body>
+</html>

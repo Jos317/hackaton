@@ -19,11 +19,16 @@ return new class extends Migration
             $table->string('video')->nullable();
             $table->double('ubicacion_long');
             $table->double('ubicacion_lat');
-            $table->dateTime('fecha');
+            $table->date('fecha');
+            $table->time('hora');
             $table->unsignedBigInteger('idevento')->nullable();
             $table->foreign('idevento')->references('id')->on('eventos');
             $table->unsignedBigInteger('idestado')->nullable();
             $table->foreign('idestado')->references('id')->on('estados');
+            $table->unsignedBigInteger('idunidad')->nullable();
+            $table->foreign('idunidad')->references('id')->on('unidads');
+            $table->unsignedBigInteger('idmunicipio')->nullable();
+            $table->foreign('idmunicipio')->references('id')->on('municipios');
         });
     }
 

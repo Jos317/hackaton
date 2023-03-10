@@ -20,9 +20,10 @@ class Alertaseeder extends Seeder
                 'foto' => json_encode(['imgs/incendio_estructural/1.jpg', 'imgs/incendio_estructural/2.jpg', 'imgs/incendio_estructural/3.jpg', 'imgs/incendio_estructural/4.jpg', 'imgs/incendio_estructural/5.jpg']), 
                 'ubicacion_long' => -10,
                 'ubicacion_lat' => -15,
-                'fecha' => '2022-04-20 18:00:00',
+                'fecha' => '2022-04-20',
+                'hora' => '18:00:00',
                 'idevento' => 2,
-                'idestado' => 2
+                'idestado' => 2,
             ],
             [
                 'nombre' => 'Incendio forestal leve en la zona sur de la Chiquitanía',
@@ -30,7 +31,8 @@ class Alertaseeder extends Seeder
                 'foto' => json_encode(['imgs/incendio_forestal/1.jpg', 'imgs/incendio_forestal/2.jpg']), 
                 'ubicacion_long' => -20,
                 'ubicacion_lat' => -25,
-                'fecha' => '2021-03-10 20:00:00',
+                'fecha' => '2021-03-10',
+                'hora' => '20:00:00',
                 'idevento' => 1,
                 'idestado' => 4
             ],
@@ -40,7 +42,8 @@ class Alertaseeder extends Seeder
                 'foto' => json_encode(['imgs/inundaciones/1.jpg', 'imgs/inundaciones/2.jpg', 'imgs/inundaciones/3.jpg']), 
                 'ubicacion_long' => -15,
                 'ubicacion_lat' => -10,
-                'fecha' => '2022-08-15 22:00:00',
+                'fecha' => '2022-08-15',
+                'hora' => '22:00:00',
                 'idevento' => 3,
                 'idestado' => 12
             ]
