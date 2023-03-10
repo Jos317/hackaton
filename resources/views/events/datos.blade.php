@@ -24,25 +24,26 @@
 
             <!-- Page Content -->
             <main>
-                    <div class="p-6 lg:p-8 bg-white border-b border-gray-200">
+                
+                    <div class="shadow-md p-6 lg:p-8 bg-white border-b border-gray-200">
                     
-                        <h1 align="center" class="mt-8 text-2xl font-semibold text-gray-900" >
+                        <h1 align="center" class=" no-underline mt-8 text-2xl font-semibold text-gray-900" >
                             Evento: {{$evento->nombre}}
                         </h1>
                     </div>
                     
-                    <div class="bg-green bg-opacity-25 grid grid-cols-1 md:grid-cols-1 gap-6 lg:gap-8 p-6 lg:p-8">
+                    <div class=" bg-opacity-25 grid grid-cols-1 md:grid-cols-1 gap-6 lg:gap-8 p-6 lg:p-8">
                         <div class="panel-body">
                             @include('events.tabla')
                         </div>
                     </div>
                     
-                    <div class="bg-green bg-opacity-25 grid grid-cols-3 md:grid-cols-3 gap-6 lg:gap-8 p-6 lg:p-8">
+                    {{-- <div class="bg-green bg-opacity-25 grid grid-cols-3 md:grid-cols-3 gap-6 lg:gap-8 p-6 lg:p-8">
                         
                     </div>
                     <div class="bg-green bg-opacity-25 grid grid-cols-1 md:grid-cols-1 gap-6 lg:gap-8 p-6 lg:p-8 ">
                         
-                    </div>
+                    </div> --}}
             </main>
         </div>
 
