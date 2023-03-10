@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\Api\AlertaController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\UsuarioController;
+use App\Http\Controllers\Api\NotificacionController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,9 +21,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('login', [UsuarioController::class, 'login']);
-Route::post('crear', [NotificacionController::class, 'crear']);
-
-// Route::get('obtenerPaciente', [PacienteController::class, 'obtenerPaciente']);
+Route::post('crear', [NotificacionController::class, 'crearNotificacion']);
+Route::post('getAlerts', [AlertaController::class, 'getAlerts']);
 // Route::get('obtenerMedicos', [MedicoController::class, 'obtenerMedicos']);
 // Route::get('obtenerConsultas', [ConsultaController::class, 'obtenerConsultas']);
 // Route::post('crearConsulta', [ConsultaController::class, 'crearConsulta']);

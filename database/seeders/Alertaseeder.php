@@ -34,7 +34,7 @@ class Alertaseeder extends Seeder
                 'fecha' => '2021-03-10',
                 'hora' => '20:00:00',
                 'idevento' => 1,
-                'idestado' => 4
+                'idestado' => 3
             ],
             [
                 'nombre' => 'Alerta de posible inundación del río Piraí en las próximas horas',
@@ -45,7 +45,7 @@ class Alertaseeder extends Seeder
                 'fecha' => '2022-08-15',
                 'hora' => '22:00:00',
                 'idevento' => 3,
-                'idestado' => 12
+                'idestado' => 3
             ]
         ]);
     }

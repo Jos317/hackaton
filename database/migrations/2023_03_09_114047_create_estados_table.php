@@ -14,10 +14,7 @@ return new class extends Migration
         Schema::create('estados', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->string('rojo');
-            $table->string('amarillo');
-            $table->string('naranja');
-            $table->string('verde');
+            $table->string('color');
             $table->integer('grado');
         });
     }

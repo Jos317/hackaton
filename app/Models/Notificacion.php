@@ -22,16 +22,16 @@ class Notificacion extends Model
     }
 
     public static function crearNotificacion(Request $request){
-        $consulta = new Notificacion();
-        $consulta->descripcion = $request->descripcion;
-        $consulta->foto = $request->foto;
-        $consulta->video = $request->video;
-        $consulta->fecha = $request->fecha;
-        $consulta->ubicacion_long = $request->ubicacion_long;
-        $consulta->ubicacion_lat = $request->ubicacion_lat; 
-        $consulta->idevento= $request->idevento; 
-        $consulta->idusuario= $request->idusuario; 
-        $consulta->save();
+        $notificacion = new Notificacion();
+        $notificacion->descripcion = $request->descripcion;
+        $notificacion->foto = json_encode($request->foto);
+        $notificacion->video = $request->video;
+        $notificacion->fecha = $request->fecha;
+        $notificacion->ubicacion_long = $request->ubicacion_long;
+        $notificacion->ubicacion_lat = $request->ubicacion_lat; 
+        $notificacion->idevento= $request->idevento; 
+        $notificacion->idusuario= $request->idusuario; 
+        $notificacion->save();
 
     }
 }

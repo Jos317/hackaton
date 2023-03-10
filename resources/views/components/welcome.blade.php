@@ -20,11 +20,15 @@
     </div>
 
     <div>
-        <div class="flex items-center">
-            <x-buttonp class="ml-4">
-                {{ __('Incendios Forestales') }}
-            </x-buttonp>
-        </div>
+        {{-- <a href="mailto:jchilelaime38@gmail.com">Hola como estas
+        </a> --}}
+        {{-- <a href = "mailto:jchilelaime38@gmail.com?subject = ALERTA & body = Hola como estas">
+            Send Email
+        </a> --}}
+        <a href = "mailto:jchilelaime38@gmail.com,diego@gmail.com?subject=ALERTA%20IMPORTANTE%20&body=Inundacion%20inminente%20">
+            Send Feedback
+        </a>
+        <a href="www.google.com" target="_self" onclick="sendMail(); return false">Link</a>
     </div>
 
     <div>
@@ -136,3 +140,11 @@
         </div>
     </div>
 </div>
+<script>
+    function sendMail() {
+    var link = "mailto:myemail@testemail.com.hk"
+         + "&subject=" + escape("This is my subject")
+         + "&body=" + escape("This is my body");
+    window.open(link, "_blank");   
+    }
+</script>
