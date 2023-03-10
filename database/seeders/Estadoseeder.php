@@ -28,7 +28,7 @@ class Estadoseeder extends Seeder
                 'naranja' => '0xffa500',
                 'amarillo' => '0xffff00',
                 'verde' => '0x008000',
-                'grado' => 2,
+                'grado' => 1,
             ],
             [
                 'nombre' => 'Critico',
@@ -36,7 +36,7 @@ class Estadoseeder extends Seeder
                 'naranja' => '0xffa500',
                 'amarillo' => '0xffff00',
                 'verde' => '0x008000',
-                'grado' => 3,
+                'grado' => 1,
             ],
             [
                 'nombre' => 'Muy alto',
@@ -52,7 +52,7 @@ class Estadoseeder extends Seeder
                 'naranja' => '0xffa500',
                 'amarillo' => '0xffff00',
                 'verde' => '0x008000',
-                'grado' => 2,
+                'grado' => 1,
             ],
             [
                 'nombre' => 'Muy alto',
@@ -60,7 +60,7 @@ class Estadoseeder extends Seeder
                 'naranja' => '0xffa500',
                 'amarillo' => '0xffff00',
                 'verde' => '0x008000',
-                'grado' => 3,
+                'grado' => 1,
             ],
             [
                 'nombre' => 'Moderado',
@@ -76,7 +76,7 @@ class Estadoseeder extends Seeder
                 'naranja' => '0xffa500',
                 'amarillo' => '0xffff00',
                 'verde' => '0x008000',
-                'grado' => 2,
+                'grado' => 1,
             ],
             [
                 'nombre' => 'Moderado',
@@ -84,7 +84,7 @@ class Estadoseeder extends Seeder
                 'naranja' => '0xffa500',
                 'amarillo' => '0xffff00',
                 'verde' => '0x008000',
-                'grado' => 3,
+                'grado' => 1,
             ],
             [
                 'nombre' => 'Bajo',
@@ -100,7 +100,7 @@ class Estadoseeder extends Seeder
                 'naranja' => '0xffa500',
                 'amarillo' => '0xffff00',
                 'verde' => '0x008000',
-                'grado' => 2,
+                'grado' => 1,
             ],
             [
                 'nombre' => 'Bajo',
@@ -108,7 +108,7 @@ class Estadoseeder extends Seeder
                 'naranja' => '0xffa500',
                 'amarillo' => '0xffff00',
                 'verde' => '0x008000',
-                'grado' => 3,
+                'grado' => 1,
             ],
         ]);
     }

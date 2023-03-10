@@ -43,7 +43,7 @@ class Eventoseeder extends Seeder
                 'foto' => 'https://culturacientifica.utpl.edu.ec/wp-content/uploads/2019/08/TERREMOTO.jpg',
             ],
             [
-                'nombre' => 'Personas desaparecidas',
+                'nombre' => 'Evento adversos',
                 'foto' =>   'https://imagenes.elpais.com/resizer/3SDUoB-ivtbkNc4cjfCSikBT9GA=/1960x1470/filters:focal(440x346:450x356)/cloudfront-eu-central-1.images.arcpublishing.com/prisa/IMJZ42UCZAFDME77FTMJLBDODA.jpg',
             ],
         ]);
