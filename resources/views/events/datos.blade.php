@@ -6,16 +6,18 @@
     </h1>
 
     <h2 class="ml-3 text-xl font-semibold text-gray-900">
-        Eventos
+        Eventos2222
     </h2>
 </div>
+
+
 
 <div class="bg-green bg-opacity-25 grid grid-cols-2 md:grid-cols-2 gap-6 lg:gap-8 p-6 lg:p-8">
     <div>
         <div class="flex items-center">
-            <a href="{{url('evento/{ 1 }')}}" class="ml-4">
-                Inundaciones
-            </a>
+            <x-buttonp class="ml-4">
+                {{ __('Inundaciones') }}
+            </x-buttonp>
         </div>
     </div>
 
