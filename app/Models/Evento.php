@@ -16,4 +16,9 @@ class Evento extends Model
     {
         return $this->hasOne('App\Models\Alerta','idevento','id');
     }
+
+    public function notificacion()
+    {
+        return $this->hasOne('App\Models\Notificacion','idevento','id');
+    }
 }

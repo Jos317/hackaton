@@ -14,6 +14,10 @@ return new class extends Migration
         Schema::create('municipios', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
+            $table->string('subgobernador');
+            $table->string('telefonoSubgob');
+            $table->string('subalcalde');
+            $table->string('telefonoSubalc');
             $table->unsignedBigInteger('idprovincia')->nullable();
             $table->foreign('idprovincia')->references('id')->on('provincias');
         });

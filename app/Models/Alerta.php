@@ -9,10 +9,14 @@ class Alerta extends Model
 {
     use HasFactory;
     protected $table = 'alertas';
-    protected $fillable = ['nombre', 'detalle', 'foto', 'video', 'ubicacion_long', 'ubicacion_lat', 'fecha', 'idevento', 'idestado'];
+    protected $fillable = ['nombre', 'detalle', 'foto', 'video', 'ubicacion_long', 'ubicacion_lat', 'fecha', 'hora','idevento', 'idestado'];
     public $timestamps = false;
 
     public function evento(){
         return $this->belongsTo('App\Models\Evento','idevento','id');
+    }
+
+    public function estado(){
+        return $this->belongsTo('App\Models\Estado','idestado','id');
     }
 }
